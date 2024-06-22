@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f2f2f2; /* Light gray background color */
+    font-family: Arial, sans-serif;
+    color: #333; /* Dark text color */
+}
+
+.navbar {
+    position: relative; /* Position the navbar fixed at the top */
+    top: 0; /* Align the navbar at the top of the viewport */
+    width: 100%; /* Make the navbar full width */
+    z-index: 100; /* Ensure the navbar is above other content */
+    color: #fff; /* White text color */
+    padding: 5px 0px; /* Add padding to top and bottom */
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Align items with space between */
+    align-items: center; /* Center vertically */
+}
+
+.navbar h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 32px; /* Increase font size */
+}
+
+.navbar-right img {
+    width: 40px; /* Adjust the width of the GitHub logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.container {
+    position: relative; /* Position the navbar fixed at the top */
+    top: -55px; /* Align the navbar at the top of the viewport */
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto 5px; /* Add margin to the top and bottom */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* White background color */
+}
+
+.container1 {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto 20px; /* Add margin to the top and bottom */
+    padding: 2px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* White background color */
+}
+
+h1 {
+    text-align: center;
+    color: #007bff; /* Blue header color */
+    font-size: 24px; /* Increase font size */
+}
+
+h2 {
+    margin-top: 20px;
+    color: #333; /* Dark text color */
+}
+
+p {
+    margin-bottom: 20px;
+    color: #666; /* Gray text color */
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333; /* Dark text color */
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue button color */
+    color: #fff; /* White text color */
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}

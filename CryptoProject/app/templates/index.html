@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Decryptify</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+    <script> 
+        function myFunction() 
+        {
+            document.getElementById("sendMessageForm").reset();
+            document.getElementById("receiveMessageForm").reset(); 
+        }
+    </script>
+<body>
+    <nav class="navbar">
+        <div class="container1">
+            <div class="navbar-left">
+                <h1>Decryptify</h1>
+            </div>
+            <div class="navbar-right">
+                <a href="https://github.com/Kyalosam90">
+                    <img src="{{ url_for('static', filename='github-logo.png') }}" alt="GitHub Logo">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Welcome to Decryptify</h2>
+        <p>Decrypt your messages securely with our platform.</p>
+        <h1>Secure Data Transfer</h1>
+        <form id="sendMessageForm" onsubmit="window.location.reload();">
+            <label for="message">Message:</label>
+            <input type="text" id="message" name="message">
+            <label for="to_number">To Number:</label>
+            <input type="text" id="to_number" name="to_number">
+            <button type="submit">Send Message</button>
+        </form>
+        <form id="receiveMessageForm" onsubmit="window.location.reload();">
+            <label for="otp">OTP:</label>
+            <input type="text" id="otp" name="otp">
+            <label for="message_id">Message ID:</label>
+            <input type="text" id="message_id" name="message_id">
+            <button type="submit">Receive Message</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
